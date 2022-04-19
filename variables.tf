@@ -8,3 +8,8 @@ variable "key_pair" {
   default     = "aws_softwarenetic"
 }
 
+variable "schedule" {
+  type        = string
+  default     = "cron(0 0/3 * * ? *)"
+  description = "Every 3 hours"
+}
